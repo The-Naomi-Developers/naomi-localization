@@ -1,0 +1,1236 @@
+# command translations
+
+imaging.error.unable_to_process: |-
+  <:n4_no:701392095822479370> ⟩ The image could not be processed.
+  Make sure that all the command arguments are correct.
+
+
+
+purge.error.cant_delete_messages: |-
+  <:n4_no:701392095822479370> ⟩ Unfortunately, I cannot clear the channel.
+  Perhaps the messages above are too old, or Discord does not allow to delete them for other reasons.
+
+purge.error.invalid_limit: |-
+  <:n4_no:701392095822479370> ⟩ {ping}, nope, specify 1-500 messages.
+
+purge.success: |-
+  <:n4_yes:701392056836161546> ⟩ **{limit}** messages were deleted.
+
+
+
+payment_multiplier.success: |-
+  <:n4_yes:701392056836161546> ⟩ The use of the multiplier in the `daily` and `hourly` commands is set to **{status}**
+
+
+
+block.success: |-
+  <:n4_yes:701392056836161546> ⟩ User {mention} is blocked from {channel} due to **{reason}**
+
+block.error.forbidden: |-
+  <:n4_no:701392095822479370> ⟩ Failed to change channel access for the specified member.
+
+
+
+unblock.success: |-
+  <:n4_yes:701392056836161546> ⟩ User {mention} is unblocked in {channel} due to **{reason}**
+
+
+
+ignored_channels.embed.title: |-
+  Ignored channels
+
+ignored_channels.embed.content: |-
+  :no_entry_sign: | The following channels are ignored on this server:
+  {channels}
+
+  *Use `{p}{cmd} add` to add a channel to the ignore list.*
+  *You can add up to 50 channels to this list.*
+
+ignored_channels.embed.content.no_channels: |-
+  :no_entry_sign: | There are no ignored channels.
+
+  *Use `{p}{cmd} add` to add a channel to the ignore list.*
+  *You can add up to 50 channels to this list.*
+
+ignored_channels.error.already_ignored: |-
+  <:n4_no:701392095822479370> ⟩ The channel you specified is already ignored.
+
+ignored_channels.error.genius_tried_to_ignore_all: |-
+  <:n4_no:701392095822479370> ⟩ Why add all channels to ignore? :thinking:
+
+ignored_channels.error.too_many_ignored_channels: |-
+  <:n4_no:701392095822479370> ⟩ Add a maximum of 50 channels to the ignore list.
+
+ignored_channels.add.success: |-
+  <:n4_yes:701392056836161546> ⟩ The {ping} (ID: {id}) channel is now ignored.
+
+ignored_channels.add.fail: |-
+  <:n4_no:701392095822479370> ⟩ The channel {ping} (ID: {id}) could not be added to the ignored channels list.
+  You can report this problem to the support server.
+
+ignored_channels.remove.success: |-
+  <:n4_yes:701392056836161546> ⟩ The {ping} (ID: {id}) channel is no longer ignored.
+
+ignored_channels.remove.fail: |-
+  <:n4_no:701392095822479370> ⟩ Failed to remove channel {ping} (ID: {id}) from the ignored channels list.
+  You can report this problem to the support server.
+
+
+
+custom_commands.embed.title: |-
+  Custom commands
+
+custom_commands.embed.content: |-
+  :link: | The server has the following custom commands:
+  {commands}
+
+  *Use `{p}{cmd} add` to add more custom commands.*
+  *You can add up to 15 custom commands.*
+
+custom_commands.embed.content.no_commands: |-
+  :link: ⟩ No custom commands are available.
+
+  *Use `{p}{cmd} add` to add more custom commands.*
+  *You can add up to 15 custom commands.*
+
+custom_commands.error.trigger_too_long: |-
+  <:n4_no:701392095822479370> ⟩ The command name must not be longer than 128 characters.
+
+custom_commands.error.too_many_custom_commands: |-
+  <:n4_no:701392095822479370> ⟩ Add no more than 15 custom commands.
+
+custom_commands.error.unable_to_run: |-
+  :warning: ⟩ Failed to execute the {callback} custom command.
+  **`Error:`** {error}
+
+custom_commands.error.too_long_response: |-
+  <:n4_no:701392095822479370> ⟩ The contents of a custom command cannot be longer than 2000 characters.
+
+custom_commands.error.no_such_custom_command: |-
+  <:n4_no:701392095822479370> ⟩ The specified custom command was not found.
+
+custom_commands.error.already_exists: |-
+  <:n4_no:701392095822479370> ⟩ The specified custom command already exists.
+
+custom_commands.add.success: |-
+  <:n4_yes:701392056836161546> ⟩ The custom command **`{cmd}`** has been created.
+
+custom_commands.add.fail: |-
+  <:n4_no:701392095822479370> ⟩ Failed to create the **`{cmd}`** custom command.
+  You can report this to the my developers on the support server.
+
+custom_commands.remove.success: |-
+  <:n4_yes:701392056836161546> ⟩ The custom command **`{cmd}`** has been deleted.
+
+custom_commands.remove.fail: |-
+  <:n4_no:701392095822479370> ⟩ Failed to delete the **`{cmd}`** custom command.
+  You can report this to the my developers on the support server.
+
+
+
+weather.error.not_found: |-
+  City '{city}' not found.
+
+weather.embed.title: |-
+  Weather in {city} ({country})
+
+weather.embed.description: |-
+  In **{city}** now **{desc}**.
+
+weather.embed.coordinates: |-
+  :compass: ⟩ Coordinates:
+
+weather.embed.coordinates.value: |-
+  ├ Latitude: **{lat}°**
+  └ Longitude: **{lon}°**
+
+weather.embed.another_params: |-
+  :clipboard: ⟩ Other:
+
+weather.embed.another_params.value: |-
+  ├ Humidity: **{hum}%**
+  ├ Visibility: **{vis} km**
+  └ Cloudiness: **{clo}%**
+
+weather.embed.temp: |-
+  :thermometer: ⟩ Temperature:
+
+weather.embed.temp_feels: |-
+  :snowflake: ⟩ Feels like:
+
+weather.embed.temp.value: |-
+  **{k} K** ┆ **{c}°C** ┆ **{f}°F**
+
+weather.embed.wind: |-
+  :dash: ⟩ Ветер:
+
+weather.embed.wind.value: |-
+  ├ Speed: **{spe} m/s**
+  └ Direction: **{dir}°**
+
+
+
+calc.title: |-
+  Calculator
+
+calc.input: |-
+  :inbox_tray: ⟩ Input:
+
+calc.output: |-
+  :outbox_tray: ⟩ Output:
+
+
+
+leaderboard.error.invalid_category: |-
+  <:n4_no:701392095822479370> ⟩ Wrong category. You can only specify `level` (displayed if no category is specified) or `money`.
+
+leaderboard.error.unavailable_due_to_intents: |-
+  <:n4_no:701392095822479370> ⟩ Sorry, but leaderboard is temporary unavailable due to disabled `SERVER MEMBERS` intent.
+
+leaderboard.embed.title: |-
+  Leaders of the **{0}** in category **{1}**
+
+
+
+help.main.not_found: |-
+  <:n4_no:701392095822479370> ⟩ **Command `{0}` was not found.**
+
+help.embed.no_description: |-
+  <:n4_no:701392095822479370> ⟩ **No description.**
+
+help.embed.cog_commands: |-
+  **[Project website](https://www.naomi.life)** • **[Invite me](https://www.naomi.life/invite)** • **[Russian support server](https://www.naomi.life/support)** • **[Donate](https://qiwi.com/n/ALICEFUN)**
+
+  {cog_commands}
+
+help.embed.description: |-
+  :clipboard: ⟩ Description:
+
+help.embed.subcommands: |-
+  :level_slider: ⟩ Subcommands:
+
+help.embed.aliases: |-
+  :paperclips: ⟩ Aliases:
+
+help.embed.category: |-
+  :file_folder: ⟩ Category:
+
+help.embed.internal: |-
+  :shield: ⟩ Internal Naomi's command.
+
+help.embed.category_title: |-
+  :link: ⟩ {0}
+
+
+
+urban.error.unavailable: |-
+  :warning: ⟩ Urban Dictionary is not available. Try again later.
+
+urban.error.no_results: |-
+  <:n4_no:701392095822479370> ⟩ No results.
+
+urban.embed.title: |-
+  Urban dictionary: {0}
+
+urban.embed.definition: |-
+  📕 ⟩ Definitions {0}:
+
+urban.embed.author: |-
+  Author: {0}
+
+
+
+github.error.unavailable: |-
+  :warning: ⟩ GitHub is unavailable. Try again later.
+
+github.error.repo_not_found: |-
+  <:n4_no:701392095822479370> ⟩ Repository not found.
+
+github.error.user_not_found: |-
+  <:n4_no:701392095822479370> ⟩ User or organization not found.
+
+github.embed.no_description: |-
+  This repository has no description.
+
+github.embed.owner: |-
+  Owner:
+
+github.embed.license: |-
+  License:
+
+github.embed.language: |-
+  Language:
+
+github.embed.forks: |-
+  Forks:
+
+github.embed.watchers: |-
+  Watchers:
+
+github.embed.created_at: |-
+  Created at:
+
+github.embed.updated_at: |-
+  Updated at:
+
+github.embed.followers: |-
+  Followers:
+
+github.embed.following: |-
+  Following:
+
+github.embed.public_repos: |-
+  Repositories:
+
+github.embed.public_gists: |-
+  Gists:
+
+github.embed.website: |-
+  Website:
+
+github.embed.organizations: |-
+  Organizations:
+
+
+
+avatar.embed.full: |-
+  Click here to open in the browser
+
+
+
+guild.embed.main_info: |-
+  Main information:
+
+guild.embed.main_info.val: |-
+  :clock1: | This server was created **{date}** ago
+  :flag_white: | Server Region: **{region}**
+
+guild.embed.more_info: |-
+  More info:
+
+guild.embed.more_info.val: |-
+  :page_facing_up: | Max attachment size is **{attsize}**
+
+guild.embed.channels: |-
+  Channels:
+
+guild.embed.channels.val: |-
+  :hash: | Total channels:
+  - **{total}**
+  :dividers: | Categories:
+  - **{category}**
+  :pen_ballpoint: | Text:
+  - **{text}**
+  :loud_sound: | Voice:
+  - **{voice}**
+
+guild.embed.members: |-
+  Members:
+
+guild.embed.members.val: |-
+  :busts_in_silhouette: | Total members:
+  - **{total}**
+  :interrobang: | Max. members:
+  - **{max}**
+
+
+
+user.embed.field.user: |-
+  As a user:
+
+user.embed.field.user.val: |-
+  :clock1: | Registered **{date}** ago
+  :one: | Account ID: **`{user_id}`**
+
+user.embed.field.server_member: |-
+  As a server member:
+
+user.embed.field.server_member.val: |-
+  :clock1: | Joined **{date}** ago
+  :art: | Nickname color (HEX): **`{hex}`**
+  :books: | Roles: **{role_count}**
+  :white_small_square: | Higher role is **{top_role}**
+
+
+
+nationalize.title: |-
+  Name nationality
+
+
+
+level-roles.entry: |-
+  • Give the role **{0}** when the member reaches level **{1}**.
+
+level-roles.embed.title: |-
+  Manage level roles
+
+level-roles.embed.error.no_roles: |-
+  <:n4_no:701392095822479370> ⟩ There are no level roles. But this can be changed!
+  Use `{p}{main_cmd} add` to add a new level role.
+
+level-roles.add.error.already_linked: |-
+  :warning: ⟩ The specified role is already linked to this level.
+  You can either bind the same role to another level or bind another role to this level.
+
+level-roles.add.error.invalid_value: |-
+  :question: ⟩ Please enter a normal value, no zeros, no too big numbers... Just something between 1 and 1000.
+
+
+
+warn-triggers.entry: |-
+  • Run command **`{0}`** when user has **{1}** warnings.
+
+warn-triggers.embed.title: |-
+  Warn triggers
+
+warn-triggers.embed.error.no_triggers: |-
+  <:n4_no:701392095822479370> ⟩ There are no warn triggers.
+  Add a few using the `{p}{main_cmd} add` command.
+
+warn-triggers.add.error.callback_does_not_exists: |-
+  The specified command **`{0}{1}`** was not found. You can't add a warning trigger with a non-existent command, it doesn't make sense!
+
+warn-triggers.add.error.callback_exists: |-
+  A trigger is already attached to this number of warnings ({0}).
+
+warn-triggers.add.error.callback_too_long: |-
+  The entered command is longer than 128 characters.
+
+warn-triggers.add.error.invalid_value: |-
+  :question: ⟩ Please specify the number of warnings from 0 to 1000.
+
+
+
+moderation.error.provide_users: |-
+  <:n4_yes:701392056836161546> ⟩ Specify one or more members to whom punishment will apply.
+
+
+
+modlogs.error.already_this_channel: |-
+  <:n4_no:701392095822479370> ⟩ The {mention} channel is already used to save moderation logs.
+
+modlogs.error.dont_have_access: |-
+  <:n4_no:701392095822479370> ⟩ No access to {mention} (ID: {id}) channel.
+  Give me access to the channel and try again.
+
+modlogs.embed.title: |-
+  Moderation logs
+
+modlogs.message.no_modlogs_channel: |-
+  <:n4_no:701392095822479370> ⟩ The channel for moderation logs is not specified.
+
+modlogs.message.modlogs_channel_invalid: |-
+  :warning: ⟩ The channel for moderation logs is specified (ID: {id}), but I could not find it on this server.
+
+modlogs.message.modlogs_channel_is: |-
+  <:n4_yes:701392056836161546> ⟩ Mod-logs channel is {mention} (ID: {id}).
+
+modlogs.success.added: |-
+  <:n4_yes:701392056836161546> ⟩ Channel {mention} (ID: {id}) will now be used for moderation logs.
+
+modlog.embed.title.mute: |-
+  Member was muted
+
+modlog.embed.title.unmute: |-
+  Member was unmuted
+
+modlog.embed.title.warn: |-
+  Member got a warning
+
+modlog.embed.title.unwarn: |-
+  Warning revoked
+
+modlog.embed.title.ban: |-
+  Member banned
+
+modlog.embed.title.kick: |-
+  Member kicked
+
+modlog.embed.title.block: |-
+  Access to the channel is blocked
+
+modlog.embed.title.unblock: |-
+  Access to the channel is granted
+
+modlog.embed.moderator: |-
+  :shield: ⟩ Moderator:
+
+modlog.embed.target: |-
+  :anger: ⟩ Target:
+
+modlog.embed.reason: |-
+  :pencil: ⟩ Punishment reason:
+
+modlog.embed.channel: |-
+  :hash: ⟩ Channel:
+
+
+
+action-log.error.already_this_channel: |-
+  <:n4_no:701392095822479370> ⟩ The {mention} channel is already used to save action logs.
+
+action-log.error.dont_have_access: |-
+  <:n4_no:701392095822479370> ⟩ No access to channel {mention} (ID: {id}).
+  Give me access to the channel and try again.
+
+action-log.embed.title: |-
+  Action logs
+
+action-log.message.no_actionlogs_channel: |-
+  <:n4_no:701392095822479370> ⟩ The channel for action logs is not specified.
+
+action-log.message.actionlogs_channel_invalid: |-
+  :warning: ⟩ The channel for action logs is specified (ID: {id}), but I could not find it on this server.
+
+action-log.message.actionlogs_channel_is: |-
+  <:n4_yes:701392056836161546> ⟩ Action logs are saved in {mention} (ID: {id}).
+
+action-log.success.added: |-
+  <:n4_yes:701392056836161546> ⟩ The channel {mention} (ID: {id}) will now be used for action logs.
+
+action-log.notify.deleted.title: |-
+  Message deleted
+
+action-log.notify.deleted.description: |-
+  The message was **deleted** in `#{channel}` (`{channel.id}`)
+
+  **🕵️‍♂️ ⟩ Author:** `{author}` (ID: `{author.id}`)
+
+action-log.notify.field.content: |-
+  **📝 ⟩ Content:**
+
+action-log.notify.field.old_content: |-
+  **📝 ⟩ Content before:**
+
+action-log.notify.field.new_content: |-
+  **📝 ⟩ Content after:**
+
+action-log.notify.changed.title: |-
+  Message changed
+
+action-log.notify.changed.description: |-
+  The message was **changed** in `#{channel}` (`{channel.id}`).
+
+  **🕵️‍♂️ ⟩ Author:** `{author}` (ID: `{author.id}`)
+  **#️⃣ ⟩ Channel:** `#{channel}` (ID: `{channel.id}`)
+
+action-log.notify.no_content: |-
+  <Empty message>
+
+
+
+warn.success: |-
+  <:n4_yes:701392056836161546> ⟩ Warned member **{member}** for reason **{reason}**.
+
+warn.trigger.cant_execute: |-
+  <:n4_no:701392095822479370> ⟩ Can't execute trigger **{trigger}** for **{count}** warnings.
+
+
+
+unwarn.success: |-
+  <:n4_yes:701392056836161546> ⟩ A warning has been revoked from user **{0}**. Reason: **{1}**.
+
+
+
+mute.success: |-
+  <:n4_yes:701392056836161546> ⟩ **{mention}** has muted. Reason: **{reason}**.
+
+mute.role_name: |-
+  Naomi's mute role 🤫
+
+mute.role.creating: |-
+  <:n4_clock:702590673253302413> ⟩ Creating and saving a mute role ...
+
+mute.role.creating_no_permissions: |-
+  <:n4_no:701392095822479370> ⟩ Failed to create a mute role: I do not have enough permissions.
+
+mute.role.unable_to_edit_some_channels: |-
+  :warning: ⟩ Some channels ({channels}) could not be edited and applied to the mute role because of a permissions error.
+  Do it yourself.
+
+mute.error.already_muted: |-
+  <:n4_no:701392095822479370> ⟩ It is impossible to mute this member: already muted.
+
+mute.error.forbidden: |-
+  <:n4_no:701392095822479370> ⟩ I don't have enough permissions to manage the current mute role :eyes:
+
+mute.error.no_mute_role: |-
+  <:n4_no:701392095822479370> ⟩ There is no mute role. Use `{p}mute-role [role id, mention or name]` to set the mute role.
+
+
+
+unmute.success: |-
+  <:n4_yes:701392056836161546> ⟩ The user {mention} is unmuted due to **{reason}**.
+
+unmute.error.not_muted: |-
+  <:n4_no:701392095822479370> ⟩ It is impossible to unmute this member: not muted.
+
+unmute.error.forbidden: |-
+  <:n4_no:701392095822479370> ⟩ I don't have enough permissions to manage the current mute role :eyes:
+
+
+
+management.error.reason_too_long: |-
+  <:n4_no:701392095822479370> ⟩ Reason cannot be longer than 128 characters.
+
+management.error.target_user_is_me: |-
+  <:n4_no:701392095822479370> ⟩ Don't be like that ... Don't make me cry :sob:
+
+management.error.users_role_higher_than_my: |-
+  <:n4_no:701392095822479370> ⟩ The highest role of the member you specified is above mine.
+
+management.error.users_role_higher_than_your: |-
+  <:n4_no:701392095822479370> ⟩ Your highest role is below the role of the member you specified.
+
+
+
+mute-role.error.already_this_role: |-
+  <:n4_no:701392095822479370> ⟩ The role **{name}** is already used as mute role.
+
+mute-role.error.no_mute_role: |-
+  <:n4_no:701392095822479370> ⟩ There is no mute role.
+  Use `{p}{cmd} <@role>` to set a mute role.
+
+mute-role.embed.title: |-
+  Mute role settings
+
+mute-role.success.added: |-
+  <:n4_yes:701392056836161546> ⟩ The role **@{name}** is set as mute role.
+
+mute-role.message.mute_role_is: |-
+  <:n4_yes:701392056836161546> ⟩ The mute role on this server is {mention} (ID: {id}).
+
+mute-role.message.mute_role_invalid: |-
+  :warning: ⟩ The mute role is specified (ID: {id}), but I could not find such a role on the server.
+
+
+
+ban.success: |-
+  <:n4_yes:701392056836161546> ⟩ Users {member} has been banned.
+
+ban.error: |-
+  <:n4_no:701392095822479370> ⟩ I cannot entice member {member}, because I do not have enough rights.
+
+
+
+kick.success: |-
+  <:n4_yes:701392056836161546> ⟩ Users {member} has been kicked.
+
+kick.error: |-
+  <:n4_no:701392095822479370> ⟩ I failed to kick member {member} because I have no rights to do so.
+
+
+
+stats.embed.links: |-
+  **[Project website](https://www.naomi.life)** • **[Invite me](https://www.naomi.life/invite)** • **[Russian support server](https://www.naomi.life/support)** • **[Donate](https://qiwi.com/n/ALICEFUN)**
+
+stats.embed.fields.hardware.name: |-
+  **Hardware and Software**
+
+stats.embed.fields.hardware.value: |-
+  :desktop: | OS **<:n4_linux:756408167608352768> {distro}**
+  <:n4_python:558731786046144532> | Python version is **{py_ver}**
+  <:n4_python:558731786046144532> | discord.py version is **{dpy_ver}**
+  :purple_heart: | Naomi version **{naomi_ver}**
+
+stats.embed.fields.info.name: |-
+  **General information**
+
+stats.embed.fields.info.value: |-
+  :tools: | Available **{cmd_count}** commands
+  :file_folder: | Total servers **{guild_count}**
+  :hourglass_flowing_sand: | Uptime **{uptime}**
+
+stats.embed.fields.ram_usage.name: |-
+  **RAM usage**
+
+stats.embed.fields.ram_usage.value: |-
+  {bar} {percent}%
+  `Total RAM: {ram}`
+  `Bot process usage: {ram_used}`
+
+stats.embed.fields.cpu_usage.name: |-
+  **CPU usage**
+
+stats.embed.fields.cpu_usage.value: |-
+  {bar} {percent}%
+  `Total CPUs: {cpus}`
+
+
+
+emoji.embed.title: |-
+  Emoji :{name}:
+
+emoji.embed.id: |-
+  :one: ⟩ ID:
+
+emoji.embed.name: |-
+  :label: ⟩ Name:
+
+emoji.embed.usage: |-
+  :gear: ⟩ Usage:
+
+emoji.embed.created_at: |-
+  :clock1: ⟩ Created at:
+
+emoji.embed.created_at.val: |-
+  **{date}** ago
+
+emoji.embed.is_animated: |-
+  :paperclips: ⟩ Have an animation?
+
+emoji.embed.is_animated.True: |-
+  **Yes**, animation exists.
+
+emoji.embed.is_animated.False: |-
+  **No**, there's no animation.
+
+
+
+hardware.not_found: |-
+  <:n4_no:701392095822479370> ⟩ Given hardware not found.
+
+
+
+prefix.title: |-
+  Personal prefix
+
+prefix.content: |-
+  :pen_fountain: | Your prefix is **` {prefix} `**
+
+  *Use **`{p}{cmd} set`** to change your prefix.*
+  *The prefix can be up to 12 characters long and must not contain spaces.*
+
+
+
+locale.title: |-
+  Personal localization
+
+locale.content: |-
+  :flag_white: | Your current locale is **{flag} {locale}**
+
+  *Use **`{p}{cmd} set`** to change your locale.*
+  :compass: | Available locales: {available}
+
+
+
+balance.your_balance: |-
+  :grey_question: ⟩ {user}, you have **{amount} {w_ico}**.
+
+balance.user_balance: |-
+  :grey_question: ⟩ {user} have **{amount} {w_ico}**.
+
+balance.transfer.useless_but_ok: |-
+  It's useless, but why not?... :thinking:
+
+balance.transfer.user_is_bot_but_ok: |-
+  This is the most useless waste of money I've ever seen :rolling_eyes:
+  Say goodbye to your **{amount} {w_ico}**...
+
+balance.transfer.user_is_naomi_itself: |-
+  Oh, thank you, but I can't accept it.
+  You'd better transfer the money to one of your friends.
+
+
+
+profile.member_is_bot: |-
+  <:n4_no:701392095822479370> ⟩ Given member is a bot.
+
+profile.image.money: |-
+  Balance
+
+profile.image.level: |-
+  Level
+
+profile.image.experience: |-
+  Experience
+
+profile.image.unknown: |-
+  N/A
+
+
+
+economy.error.main: |-
+  <:n4_no:701392095822479370> ⟩ {0}, we apologize, but the Naomi money transfer service has had a technical error. Try again later.
+
+economy.error.user_reached_max_money: |-
+  :warning: ⟩ {0}, the user to whom you are trying to transfer money already has the maximum balance in our system.
+  The transaction was rejected by Naomi International Bank.
+
+economy.error.sum_more_than_max: |-
+  <:n4_no:701392095822479370> ⟩ The amount indicated is greater than the maximum possible amount. A smaller amount, please.
+
+economy.error.max_money_reached: |-
+  :warning: ⟩ {0}, wow, unbelievable! You have reached the maximum available amount of money in our system.
+  Well, this is of course very good, but you can't get any more money. Naomi International Bank refuses to provide you with any services.
+
+
+
+daily.main.success: |-
+  :dollar: ⟩ {0}, you got your daily **{1} {w_ico}**.
+  :sparkles: Level multiplier: **{2}**.
+
+daily.main.success_no_mp: |-
+  :dollar: ⟩ {0}, you got your daily **{1} {w_ico}**.
+
+hourly.main.success: |-
+  :dollar: ⟩ {0}, you got your hourly **{1} {w_ico}**.
+  :sparkles: Level multiplier: **{2}**.
+
+hourly.main.success_no_mp: |-
+  :dollar: ⟩ {0}, you got your hourly **{1} {w_ico}**.
+
+
+
+ss.error.server_error: |-
+  <:n4_no:701392095822479370> ⟩ There was an error on the server, and that is why: `{error}`.
+  I advise you just to wait a little bit or to repeat it again. It falls, sometimes. I'm sure it does!
+
+ss.error.invalid_start_char: |-
+  <:n4_no:701392095822479370> ⟩ Please make sure that you give me a working link.
+
+ss.warning.not_nsfw: |-
+  :warning: ⟩ This channel has no NSFW label, so the screenshot of the site is in the spoiler.
+
+ss.toggle_nsfw.success: |-
+  :repeat: ⟩ The need for a NSFW channel for the `{prefix}{cmd}` command is switched.
+  Current state: `{state}`
+
+ss.toggle_nsfw.error: |-
+  <:n4_no:701392095822479370> ⟩ Unfortunately, an error occurred when switching the need in the NSFW channel for the `{prefix}{cmd}` command. Try again later (this incident will be logged).
+
+
+
+ship.shipping: |-
+  Let's ship this couple <3
+
+ship.shipping?: |-
+  Let's ship this... couple?
+
+ship.shipping.percent: |-
+  These two are perfect for each other by {0}%!
+
+ship.shipping.percent_yourself: |-
+  The love for yourself is {0}%...
+
+ship.shipping.mixed_nick: |-
+  Mixed nickname:
+
+ship.message.0-5: |-
+  Oh, well, that's not good at all... :confounded:
+
+ship.message.5-10: |-
+  There is almost no hope... :frowning2:
+
+ship.message.10-25: |-
+  You have to try harder... :confused:
+
+ship.message.25-40: |-
+  Well, it looks like something might happen... :pleading_face:
+
+ship.message.40-58: |-
+  Just good friends :stuck_out_tongue_winking_eye:
+
+ship.message.58-68: |-
+  You can do it, I believe in you! :slight_smile:
+
+ship.message.69: |-
+  Wooho! Perfect number. Let's do it :smirk:
+
+ship.message.69-82: |-
+  You are perfect for each other! :heart:
+
+ship.message.82-90: |-
+  OMG, you are a perfect couple. :kissing_heart:
+
+ship.message.90-99: |-
+  You are just made for each other! :smiling_face_with_3_hearts:
+
+ship.message.100: |-
+  When the wedding? Do not forget to invite me! :sparkling_heart:
+
+
+
+errors.description: |-
+  Use `{p}help {cmd_name}` to get help on this command.
+
+errors.footer_info: |-
+  Exception: {0}
+
+
+
+errors.managed_role: |-
+  <:n4_no:701392095822479370> ⟩ It is not possible to use this role because it is managed by integration.
+
+errors.no_access_due_to_position: |-
+  <:n4_no:701392095822479370> ⟩ It is impossible to use this role because it is above my higher role.
+
+errors.economy.not_enough: |-
+  **<:n4_no:701392095822479370> ⟩ You do not have enough money to make a transfer.**
+
+errors.no_rights_to_send_message: |-
+  **<:n4_no:701392095822479370> ⟩ I have no permissions to send messages to the {channel} channel on the server {guild}.**
+  **Please grant me all the necessary permissions, or try to use my commands in another channel that I can access.**
+
+errors.nsfw_channel_required: |-
+  **<:n4_no:701392095822479370> ⟩ An NSFW channel is required to perform this command.**
+  Try to perform the command in that channel.
+
+errors.command_on_cooldown: |-
+  **<:n4_no:701392095822479370> ⟩ The command you entered has a cooldown.**
+  Wait {0} before you perform it again.
+
+errors.missing_perms: |-
+  **<:n4_no:701392095822479370> ⟩ You don't have the following permissions:**
+  {0}
+
+errors.bot_missing_perms: |-
+  **<:n4_no:701392095822479370> ⟩ I don't have the following permissions:**
+  {0}
+
+errors.forbidden: |-
+  **<:n4_no:701392095822479370> ⟩ Forbidden.**
+
+errors.unknown_error: |-
+  **:warning: ⟩ An unknown error has occurred. Well, this has to be fixed...**
+
+errors.custom.json_converting_error: |-
+  **<:n4_no:701392095822479370> ⟩ Unable to convert given data to JSON format.**
+  Check that the data is correct.
+
+errors.wavelink.zero_connected_nodes: |-
+  **:warning: ⟩ At the moment the music is not available, because there is no connection to the Lavalink server.**
+  Try later or contact the developers about this problem.
+
+errors.invalid_prefix: |-
+  <:n4_no:701392095822479370> ⟩ Given prefix can't be used.
+  The prefix cannot be longer than 12 characters or consists of a space.
+
+errors.locale_doesnt_exist: |-
+  <:n4_no:701392095822479370> ⟩ Given locale doesn't exist.
+
+errors.invalid_money_amount: |-
+  <:n4_no:701392095822479370> ⟩ The specified amount of money is not invalid. You must specify a value from 0 to {max_money} including.
+
+
+
+shop.title: |-
+  Store of roles on the server {0}
+
+shop.empty: |-
+  Darkness in the room? Yea, we understand, just shop is empty.
+  Is it possible that something will be added later?
+
+shop.command_to_manage: |-
+  Use "{p}help shop" to learn how to manage a store.
+
+shop.command_to_buy: |-
+  Use "{p}buy <item id>" to buy the role you're interested in.
+
+shop.manage.subcommands: |-
+  Subcommands:
+
+shop.manage.title: |-
+  Role shop management
+
+shop.add.success: |-
+  The item "{name}" has been successfully added to the store.
+
+shop.add.item_id: |-
+  :question: ⟩ Specify an identifier (ID) for the item (write right here in this channel).
+  Server members will have to specify it to buy this role.
+
+shop.add.description: |-
+  :question: ⟩ Now come up with a description for this item (also write in this channel).
+
+shop.add.cost: |-
+  :question: ⟩ All that remains is to specify the cost of the role!
+  Send an integer number to the chat without any other characters.
+
+shop.add.error_id_already_exist: |-
+  :warning: ⟩ Failed to add an item to the shop.
+  There is already an item with ID `{0}` in the shop.
+
+
+
+buy.not_found: |-
+  <:n4_no:701392095822479370> ⟩ The item with this ID was not found.
+  (ID is the text that is displayed in the frame `like this`, to the left of the mentioning role)
+
+buy.shop.empty: |-
+  Oh, a customer! Greetings, but unfortunately we don't have anything on sale.
+  Come back later, maybe something will be added in the future...
+
+buy.error.already_purchased: |-
+  <:n4_no:701392095822479370> ⟩ You want to buy a role that you already have... Just why??
+
+buy.error.not_enough_money: |-
+  <:n4_no:701392095822479370> ⟩ You do not have enough money to buy this role.
+
+buy.error.forbidden: |-
+  :warning: ⟩ I failed to give you this role because of a permissions error, so the operation was cancelled.
+
+
+
+nsfw.main.not_found: |-
+  <:n4_no:701392095822479370> ⟩ Posts with the specified tags not found... Try other tags!
+
+nsfw.rating: |-
+  :up: ⟩ Rating:
+
+nsfw.tags: |-
+  :card_box: ⟩ Tags:
+
+
+
+anime.not_found: |-
+  <:n4_no:701392095822479370> ⟩ Anime by your query was not found.
+
+anime.type: |-
+  :tv: ⟩ Type:
+
+anime.episodes: |-
+  :dividers: ⟩ Episodes:
+
+anime.score: |-
+  :up: ⟩ Score:
+
+anime.start_date: |-
+  :arrow_forward: ⟩ Start date:
+
+anime.end_date: |-
+  :stop_button: ⟩ End date:
+
+anime.members: |-
+  :woman_raising_hand: ⟩ Members:
+
+anime.rating: |-
+  :bar_chart: ⟩ Rating:
+
+
+
+skin.error.unable_to_fetch_skin: |-
+  <:n4_no:701392095822479370> ⟩ Unable to fetch skin of the given player.
+
+
+
+play.embed.title: |-
+  A little question...
+
+play.embed.content: |-
+  *Which of these is best for you?*
+  *Choose by clicking on the desired reaction below the message!*
+
+  {variants}
+
+play.message.success.played: |-
+  <:n4_yes:701392056836161546> ⟩ Now playing: **{title}**
+
+play.message.success.added: |-
+  <:n4_yes:701392056836161546> ⟩ Added to queue: **{title}**
+
+play.error.no_playlist_support: |-
+  <:n4_no:701392095822479370> ⟩ Playlist playback is not supported yet.
+
+play.error.exception: |-
+  <:n4_no:701392095822479370> ⟩ An error occurred during the initialization of playback.
+
+play.error.no_results: |-
+  <:n4_no:701392095822479370> ⟩ Nothing was found on YouTube by query **{query}**.
+
+play.error.no_voice: |-
+  <:n4_no:701392095822479370> ⟩ You must be in the voice channel to execute this command.
+
+
+
+rewind.error.exception: |-
+  <:n4_no:701392095822479370> ⟩ An error occurred while rewinding the track.
+
+
+
+connect.message.success: |-
+  :electric_plug: ⟩ Connected to voice channel **{name}**.
+
+connect.error.exception: |-
+  :warning: ⟩ An error occurred during connecting to the voice channel.
+
+connect.error.no_voice: |-
+  <:n4_no:701392095822479370> ⟩ You must be in the voice channel to execute this command.
+
+
+
+stop.message.success: |-
+  <:n4_yes:701392056836161546> ⟩ Playing stopped.
+
+stop.error.exception: |-
+  :warning: ⟩ An error occurred during playback stop.
+
+
+
+playing.error.no_playback: |-
+  :warning: ⟩ Nothing is playing at the moment.
+
+playing.embed.title: |-
+  Music playback information
+
+playing.embed.content.playing: |-
+  __**Playing**__ / Paused
+
+playing.embed.content.paused: |-
+  Playing / __**Paused**__
+
+playing.embed.content: |-
+  {repeat} :loud_sound: | Currently playing: **{current}**
+
+  {bar}
+  ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ Queue: **{queue}** • {status} • Volume: **{vol}**
+
+playing.embed.fields.queue: |-
+  Playback queue
+
+playing.embed.fields.queue.no_tracks: |-
+  *Use `{p}play` to add a song to the queue or play it if queue is empty.*
+  *You can use HTTPS links to YouTube videos or just specify your request.*
+
+
+
+skip.error.no_playback: |-
+  :warning: ⟩ Nothing is playing at the moment.
+
+skip.error.must_be_in_the_one_channel_with_me: |-
+  <:n4_no:701392095822479370> ⟩ You must be in the same channel as me to execute this command.
+  *You can invite me into your channel using the `{p}connect` command.*
+
+skip.error.an_exception: |-
+  :warning: ⟩ An unexpected error occurred. Try again or later.
+
+skip.message.skipped: |-
+  <:n4_yes:701392056836161546> ⟩ Skipping track **{track}**...
+
+skip.error.no_voice: |-
+  <:n4_no:701392095822479370> ⟩ You must be in the voice channel to execute this command.
+
+
+
+repeat.success.not_repeating: |-
+  :repeat: ⟩ I won't repeat it again, OK.
+
+repeat.success.repeating: |-
+  :repeat_one: ⟩ Now I will be repeating this track as long as there are members in the voice channel.
+
+
+
+volume.success: |-
+  <:n4_yes:701392056836161546> ⟩ The volume is set to **{level}%**.
+
+volume.error.maximum_volume_exceeded: |-
+  <:n4_no:701392095822479370> ⟩ You can't set the volume above 200%. (Well, technically you can, but it's horrible)
+
+volume.error.exception: |-
+  :warning: ⟩ An unexpected error occurred. Try again or later.
+
+
+
+pause.paused: |-
+  :pause_button: Playback paused.
+
+pause.continued: |-
+  :arrow_forward: Playback continued.
+
+
+
+equalizer.embed.title: |-
+  Equalizer tuning
+
+equalizer.embed.content: |-
+  :level_slider: | Current EQ: ` {current} `
+
+  *Use `{p}{cmd}` to change the equalizer for this server.*
+  :control_knobs: | Available EQs: {all_eqs}
+
+equalizer.eq_doesnt_exists: |-
+  <:n4_no:701392095822479370> ⟩ The equalizer you provided is not present.
+
+equalizer.using_eq: |-
+  <:n4_yes:701392056836161546> ⟩ Okay, now I'm going to use `{eq}` EQ.
+
+
+
+guildprefix.title: |-
+  Server prefix
+
+guildprefix.content: |-
+  :pen_fountain: | Prefix for this guild is **` {prefix} `**
+
+  *Use **`{p}{cmd} set`** to change guild prefix.*
+  *The prefix can be up to 12 characters long and must not contain spaces.*
+
+
+
+guildlocale.title: |-
+  Server localization
+
+guildlocale.content: |-
+  :flag_white: | Current locale for this guild is **{flag} {locale}**
+
+  *Use **`{p}{cmd} set`** to change guild locale.*
+  :compass: | Available locales: {available}
+
+
+
+base64.too_long: |-
+  <:n4_no:701392095822479370> ⟩ Too long text. Max. length is {max_len}
+
+
+
+punishments.error.non_admin_to_see_others: |-
+  <:n4_no:701392095822479370> ⟩ You must have a `MANAGE GUILD` permission to view the punishment log of other users.
+
+punishments.embed.title: |-
+  Punishment logs for {0}
+
+punishments.embed.title_typed: |-
+  Punishment logs for {0} | {1}
+
+punishments.no_reason: |-
+  Reason not specified.
+
+punishments.embed.datetime_notice: |-
+  Time is displayed according to the time zone [UTC+0](https://www.timeanddate.com/worldclock/timezone/utc)
+
+punishments.embed.entry: |-
+  `{date}`
+  | **{type_}** for reason **{reason}**
+
+punishments.embed.nope: |-
+  <:n4_yes:701392056836161546> ⟩ There is no punishments.
+
+
+
+permissions.error.non_admin_to_see_others: |-
+  <:n4_no:701392095822479370> ⟩ To view the permissions of other members, you must have a `MANAGE GUILD` permission.
+
+permissions.title: |-
+  Permissions of {member} on {guild}
+
+
+
+game.genres: |-
+  Genres:
+
+game.players_rate: |-
+  Players rate:
+
+game.platforms: |-
+  Platforms:
+
+game.release_date: |-
+  Release date:
+
+game.error.not_found: |-
+  <:n4_no:701392095822479370> ⟩ The game you specified was not found.
+
+
+
+embed.error.timestamps_not_supported: |-
+  <:n4_no:701392095822479370> ⟩ Timestamps not supported.

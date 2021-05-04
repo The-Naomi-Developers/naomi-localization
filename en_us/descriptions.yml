@@ -1,0 +1,689 @@
+# commands and cogs description
+
+management_economy.description: |-
+  Economy management commands
+
+management_economy.description.set_wallet_icon: |-
+  Set the designation of virtual currency for this server
+  You can specify, for example, a coin emoji, or you can write something like "coins"
+  The specified text or emoji will be displayed to the right of the amount of money in the economy system
+
+management_economy.description.set_daily_payment: |-
+  Set a fixed payout for the `daily` command
+
+  **Please note:**
+  Using a combination of this command with the `toggle-multiplier` and `hourly-payment` commands, you can set up a virtual currency payout
+
+management_economy.description.set_hourly_payment: |-
+  Set a fixed payout for the `hourly` command
+
+  **Обратите внимание:**
+  Используя комбинацию этой команды с командами `daily-payment` и `toggle-multiplier`, вы можете настроить выдачу виртуальной валюты
+
+management_economy.description.payment_multiplier: |-
+  Switch the state of using the money multiplier
+
+  **Please note:**
+  The multiplier is used in the `daily` and `hourly` commands to multiply the amount per user level in the profile system
+  Using a combination of this command with the `daily-payment` and `hourly-payment` commands, you can adjust the output of virtual currency
+
+
+
+management_config.description: |-
+  Manage settings for moderation module
+
+management_config.description.custom_commands: |-
+  Custom commands for your server
+
+  **Examples:**
+  `{p}custom-commands add help` - add a custom command named "help". This means that when a user sends the word "help" into the chat, I will send in response the text that is set for me to respond to this message
+  `{p}custom-commands remove help` - remove the custom "help" command
+
+  **Note:**
+  *The command name must be in double quotes (except if the custom command consists of one word). The answer to the command is given without quotes.*
+
+management_config.description.custom_commands.add: |-
+  Add a new custom command
+
+  **Examples:**
+  `{p}custom-commands add "help" Get help at the #help channel!` - add c custom command named "help"
+  `{p}custom-commands add "how to set up Naomi" Just use n.help command to get information` - When sending "how to set up Naomi" into the chat, user will get the answer "Just use n.help command to get information"
+
+  **Note:**
+  *The command name must be in double quotes (except if the custom command consists of one word). The answer to the command is given without quotes.*
+
+management_config.description.custom_commands.remove: |-
+  Delete the custom command
+
+  **Examples:**
+  `{p}custom-commands remove help` - delete the custom command named "help"
+
+management_config.description.ignored_channels: |-
+  Channel ignoring settings. Used to limit access to my commands in certain channels
+
+management_config.description.ignored_channels.add: |-
+  Ignore the channel. Attempts to execute any of my commands on the ignored channel will fail
+
+  **Examples:**
+  `{p}ignored-channels add #general` - ignore attempts to execute commands in the `#general` channel
+
+management_config.description.ignored_channels.remove: |-
+  Stop ignoring the channel
+  Commands in that channel will work again
+
+management_config.description.guild-prefix: |-
+  Guild command prefix management
+
+  **Examples:**
+  `{p}guild-prefix set $` - set '$' as new command prefix for this guild;
+  `{p}guild-prefix reset` - reset guild prefix to default
+
+  **Note:**
+  *Mention me if you forgot command prefix.*
+
+management_config.description.guild-prefix.set: |-
+  Set a new command prefix
+
+  **Examples:**
+  `{p}prefix set $` - set '$' as new command prefix for this guild;
+
+  **Note:**
+  *Mention me if you forgot command prefix.*
+
+management_config.description.guild-prefix.reset: |-
+  Reset command prefix to default for this guild
+
+  **Note:**
+  *Mention me if you forgot command prefix.*
+
+management_config.description.guild-locale: |-
+  Guild localization management
+
+  **Examples:**
+  `{p}guild-locale set ru` - set Russian localization;
+  `{p}guild-locale reset` - reset guild locale to default;
+
+  **Note:**
+  *The translation may not be accurate.*
+
+management_config.description.guild-locale.set: |-
+  Set a new localization for this guild
+
+  **Note:**
+  *The translation may not be accurate.*
+
+management_config.description.guild-locale.reset: |-
+  Reset localization for this guild
+
+  **Note:**
+  *The translation may not be accurate.*
+
+management_config.description.level_roles: |-
+  Level roles roles that are given when a certain level is reached in my level system
+
+management_config.description.level_roles.add: |-
+  Add a new level role to the system
+
+  **Examples:**
+  `{p}level-roles add 5 @MyCustomRole` - add the level role 'MyCustomRole'. This role will be given if the member achieves level 5
+
+management_config.description.level_roles.remove: |-
+  Remove the role from the level role system. It will no longer be given out when a certain level is reached
+  By the way, you can also simply remove a role - it will be automatically removed from the system when you enter the `{p}level-roles` command. ¯\_(ツ)_/¯
+
+management_config.description.modlogs: |-
+  Set up or see a channel for moderation logs. All actions related to my moderation system will be sent to this channel
+
+  **Examples:**
+  `{p}modlogs #my-modlog-channel` - set channel **my-modlog-channel** as a channel for moderation logs
+
+  **Note:**
+  Obviously, I must have access to send messages to the specified channel
+
+management_config.description.modlogs.reset: |-
+  Reset the channel for logging moderation. Logging will be stopped
+
+management_config.description.action_logs: |-
+  Setting channel for chat events logging. It will log events such as deletions, changes of messages
+
+management_config.description.action_logs.reset: |-
+  Reset the channel for event logging. Logging will be stopped
+
+management_config.description.mute-role: |-
+  Set the mute role on the server. It will be given out when using the mute command
+  If the role is not found on the server, the mute command will ask for a new mute role
+
+management_config.description.mute-role.reset: |-
+  Reset a mute role
+
+management_config.description.warn_triggers: |-
+  Warning triggers - is the ability to execute one of my many commands automatically when a member of the server has received a certain number of warnings
+  You can use it, for example, to give a ban to those who have reached 5 warnings, but these warn-triggers are not limited to it
+
+  **Examples of adding such triggers:**
+  `{p}warn-triggers add 3 money set $target 0` - adds a trigger for 3 warnings. When the member reaches the 3 warnings, I will execute the command `{p}money set <current_member_here> 0` automatically. This example completely voids the balance of this member
+
+  **Note:**
+  The warn-triggers have the ability to use some variables, namely:
+  `$target` - **mention** of the user who was warned
+  `$channel` - **recall** of the current text channel
+
+  The warn-trigger is executed on behalf of the moderator who gave the warning! Simply put, this means that if you have given a warning to someone and triggered a warn-trigger, the trigger command will be executed as if you had manually executed it
+
+management_config.description.warn_triggers.add: |-
+  Add a new warning trigger to the system
+
+  **Examples:**
+  `{p}warn-triggers add 3 money set $target 0` - adds a trigger for 3 warnings. When the member reaches the 3 warnings, I will execute the command `{p}money set <current_member_here> 0` automatically. This example completely voids the balance of this member
+  `{p}warn-triggers add 10 ban $target Got 10 warnings.` - a more familiar example: after reaching 10 warnings, the server member will be banned from the server due to "Got 10 warnings."
+
+  **Note:**
+  The warn-triggers have the ability to use some variables, namely:
+  `$target` - **mention** of the user who was warned
+  `$channel` - **recall** of the current text channel
+
+  The warn-trigger is executed on behalf of the moderator who gave the warning! Simply put, this means that if you have given a warning to someone and triggered a warn-trigger, the trigger command will be executed as if you had manually executed it
+
+management_config.description.warn_triggers.remove: |-
+  Delete the warning trigger linked to the specified number of warnings
+
+  **Examples:**
+  `{p}warn-triggers remove 3` - if there is a trigger linked to 3 warnings in the system, it will be removed. However, if there is no such trigger, the command will not generate a message about it. You can find out which triggers are in the system by executing the `{p}warn-triggers` command
+
+  **Note:**
+  The warn-trigger is executed on behalf of the moderator who gave the warning! Simply put, this means that if you have given a warning to someone and triggered a warn-trigger, the trigger command will be executed as if you had manually executed it
+
+
+
+socialeconomy.description: |-
+  Social interaction. Shops, economy and other
+
+socialeconomy.description.balance: |-
+  Check your pockets. How many money do you have? (or not you)
+
+socialeconomy.description.balance.set: |-
+  Set a certain balance for the server member
+
+socialeconomy.description.balance.add: |-
+  Add money to the server member
+
+socialeconomy.description.balance.remove: |-
+  Take the money from the server member
+
+socialeconomy.description.pay: |-
+  Transfer money to another user
+
+socialeconomy.description.daily: |-
+  Get your daily money
+
+socialeconomy.description.hourly: |-
+  Get your hourly money
+
+socialeconomy.description.shop: |-
+  See the server store. You can buy server roles there
+  Store management is performed through subcommands. You can also see it here
+
+socialeconomy.description.shop.manage: |-
+  Manage the server shop
+
+socialeconomy.description.shop.add: |-
+  Add a new item to the shop
+
+socialeconomy.description.shop.remove: |-
+  Remove item from the shop
+
+socialeconomy.description.shop.buy: |-
+  Buy an item from the shop
+
+
+
+socialbase.description: |-
+  Social interaction. Profiles and profile management
+
+socialbase.description.leaderboard: |-
+  See the list of server leaders by money and level
+
+socialbase.description.profile: |-
+  Check user's profile
+
+  **Note:**
+  **Animated avatars are not and will never be supported.**
+
+
+
+utils.description: |-
+  Utilities and other commands
+
+utils.description.anime: |-
+  Search information about anime
+
+utils.description.skin: |-
+  Show minecraft player skin
+
+  **Examples:**
+  {{p}skin TheLittleCherry` - show theLittleCherry skin (3D model)
+  `{p}skin GoldenXelenium raw` - "raw" skin of player GoldenXelenium
+
+  **Please note:**
+  *Since this command uses third-party services (Mojang API), we do not guarantee the stable functioning of the command.*
+
+
+
+utils.description.snapshot: |-
+  Take a screenshot of a website
+
+utils.description.snapshot.toggle_nsfw: |-
+  Switch the need for the NSFW channel for the `n.snapshot` command
+
+utils.description.qrcode: |-
+  Make a QR-code based on your content
+
+utils.description.base64: |-
+  Encode something with Base64
+
+utils.description.unbase64: |-
+  Decode something from Base64
+
+utils.description.calculator: |-
+  Calculator based on MathJS
+
+  **Examples:**
+  `{p}calc 2 km in meters`
+  `{p}calc 92 * 2`
+
+  **Note:**
+  *Since this command uses the MathJS service, we do not guarantee the stable functioning of the command.*
+
+utils.description.weather: |-
+  Get information about weather in given city
+
+
+
+preferences.description: |-
+  User preferences
+
+preferences.description.prefix: |-
+  Command prefix management
+
+  **Examples:**
+  `{p}prefix set $` - set '$' as your new command prefix;
+  `{p}prefix reset` - reset your prefix to default
+
+  **Note:**
+  *Mention me if you forgot command prefix.*
+
+preferences.description.prefix.set: |-
+  Set a new command prefix
+
+  **Examples:**
+  `{p}prefix set $` - set '$' as your new command prefix;
+
+  **Note:**
+  *Mention me if you forgot command prefix.*
+
+preferences.description.prefix.reset: |-
+  Reset your current command prefix
+
+  **Note:**
+  *Mention me if you forgot command prefix.*
+
+preferences.description.locale: |-
+  Localization management
+
+  **Examples:**
+  `{p}locale set ru` - set Russian localization;
+  `{p}locale reset` - reset your locale to default;
+
+  **Note:**
+  *The translation may not be accurate.*
+
+preferences.description.locale.set: |-
+  Set a new localization for you
+
+  **Note:**
+  *The translation may not be accurate.*
+
+preferences.description.locale.reset: |-
+  Reset your localization
+
+  **Note:**
+  *The translation may not be accurate.*
+
+
+
+nsfw.description: |-
+  NSFW commands
+
+nsfw.description.konachan: |-
+  Konachan.com R-18 Imageboard
+
+  **Examples:**
+  `{p}konachan rating:safe` - safe image search (without 18+);
+  `{p}konachan white_hair red_eyes` - characters with white colored hair and red eyes;
+  `{p}konachan rating:explicit` - explicit images (NSFW!)
+
+  **Note:**
+  *Konachan command can be used only in NSFW channel*
+  *Since this command uses the Gelbooru API, we do not guarantee the stable functioning of the command.*
+
+nsfw.description.gelbooru: |-
+  Gelbooru.com Imageboard
+
+  **Examples:**
+  `{p}gelbooru rating:safe` - safe image search (without 18+);
+  `{p}gelbooru white_hair red_eyes` - characters with white colored hair and red eyes;
+  `{p}gelbooru rating:explicit` - explicit images (NSFW!)
+
+  **Note:**
+  *Gelbooru command can be used only in NSFW channel*
+  *Since this command uses the Gelbooru API, we do not guarantee the stable functioning of the command.*
+
+
+
+music.description: |-
+  Music player commands
+
+music.description.connect: |-
+  Connect me to the given voice channel
+
+music.description.play: |-
+  Play a song in the voice channel
+
+music.description.skip: |-
+  Skip current track
+
+music.description.stop: |-
+  Stop currently playing song and leave the voice channel
+
+music.description.now_playing: |-
+  Information about the current track and play queue
+
+music.description.equalizer: |-
+  Find out the EQ list or change it
+
+music.description.pause: |-
+  Pause or unpause the track
+
+music.description.rewind: |-
+  Rewind track
+
+  **Examples:**
+  `{p}rewind 2:16` - rewind the track to the `2:16` position.
+  `{p}rewind 0:00` - rewind to the beginning of the track.
+
+music.description.volume: |-
+  Change the player volume from 0 to 200%
+
+music.description.repeat: |-
+  Enable current track repeat
+
+
+
+
+imaging.description: |-
+  Commands related to image editing (Cloudimage implementation)
+
+imaging.description.resize: |-
+  Resize image
+
+  **Examples:**
+  {p}resize 512 512 <save proportions (true/false)> @Nelly
+
+  **Note:**
+  *You can attach your image or use mention to edit avatar of mentioned user.*
+
+imaging.description.rotate: |-
+  Rotate image
+
+  **Examples:**
+  {p}rotate 90 @Nelly
+
+  **Note:**
+  *You can attach your image or use mention to edit avatar of mentioned user.*
+
+imaging.description.compress: |-
+  Compress image
+
+  **Examples:**
+  {p}compress 5 @Nelly
+
+  **Note:**
+  *You can attach your image or use mention to edit avatar of mentioned user.*
+
+imaging.description.blur: |-
+  Blur image
+
+  **Examples:**
+  {p}blur 5 @Nelly
+
+  **Note:**
+  *You can attach your image or use mention to edit avatar of mentioned user.*
+
+imaging.description.grey: |-
+  Transforms the image into black and white
+
+  **Examples:**
+  {p}grey @Nelly
+
+  **Note:**
+  *You can attach your image or use mention to edit avatar of mentioned user.*
+
+imaging.description.round: |-
+  Round image corners
+
+  **Examples:**
+  {p}round 5 @Nelly
+
+  **Note:**
+  *You can attach your image or use mention to edit avatar of mentioned user.*
+
+imaging.description.bright: |-
+  Adjust the brightness of image
+
+  **Examples:**
+  {p}bright 5 @Nelly
+
+  **Note:**
+  *You can attach your image or use mention to edit avatar of mentioned user.*
+
+imaging.description.contrast: |-
+  Adjust the contrast of image
+
+  **Examples:**
+  {p}contrast 5 @Nelly
+
+  **Note:**
+  *You can attach your image or use mention to edit avatar of mentioned user.*
+
+imaging.description.pixelate: |-
+  Pixelate image
+
+  **Examples:**
+  {p}pixelate <pixel size> @Nelly
+
+  **Note:**
+  *You can attach your image or use mention to edit avatar of mentioned user.*
+
+imaging.description.crop: |-
+  Crop image
+
+  **Examples:**
+  {p}crop 512 512 @Nelly
+
+  **Note:**
+  *You can attach your image or use mention to edit avatar of mentioned user.*
+
+
+
+fun.description: |-
+  Commands related to entertainments
+
+fun.description.wtftext: |-
+  Implementation of the Porfiryevich AI. Try to experience the autocompletion of text from AI, and perhaps spend your time having fun
+
+fun.description.wtfsay: |-
+  Voice acting for the command `{p}wtftext`
+  Read more about functionality: `{p}help wtftext`
+
+  **Note:**
+  *You must be in the voice channel to perform this action.* 
+
+fun.description.asbot: |-
+  Send your message as you as a bot
+
+fun.description.ship: |-
+  Ship someone with someone else
+
+fun.description.sticker: |-
+  Get a **bigger** emoji from any of my servers and send it to channel
+  Similar to `{p}nitro`
+
+fun.description.nitro: |-
+  Use animated emoji or emoji from another server in the current channel
+
+fun.description.nationalize: |-
+  Predict the nationality of a name
+
+fun.description.game: |-
+  Information about given computer game
+
+
+
+management_moderation.description: |-
+  Moderation commands
+
+management_moderation.description.block: |-
+  Block access to a channel
+  Similar to mute, but instead of blocking access to all channels, it only blocks access to one specific channel
+
+management_moderation.description.unblock: |-
+  Unlock access to the channel
+
+management_moderation.description.mute: |-
+  Mute a guild member
+
+management_moderation.description.unmute: |-
+  Unmute a guild member
+
+management_moderation.description.warn: |-
+  Warn a guild member
+
+management_moderation.description.unwarn: |-
+  Revoke the warning from the member
+
+management_moderation.description.ban: |-
+  Ban user from current server
+
+  **Examples:**
+  `{p}ban @WhataIsMe` - ban given user without reason;
+  `{p}ban @KavoUser Some ban reason` - ban with reason 'Some ban reason';
+
+  **Note:**
+  *Instead of mention, you can specify user ID (ex. **556437901509001216**), name (ex. **Nelly** or **Nelly#9106**) or nickname*
+
+management_moderation.description.kick: |-
+  Kick user from current server
+
+  **Examples:**
+  `{p}kick @WhataIsMe` - kick given user without reason;
+  `{p}kick @KavoUser Some kick reason` - kick with reason 'Some kick reason';
+
+  **Note:**
+  *Instead of mention, you can specify user ID (ex. **556437901509001216**), name (ex. **Nelly** or **Nelly#9106**) or nickname*
+
+
+
+management_utils.description: |-
+  Utils for guild moderation
+
+management_utils.description.say: |-
+  Send a message on behalf of Naomi to a server channel
+
+management_utils.description.perms: |-
+  Fetch a specific user's permissions
+
+management_utils.description.punishments: |-
+  Check your punishments log
+
+management_utils.description.purge: |-
+  Clear this text channel
+
+management_utils.description.embed: |-
+  Make an embedded message (Rich Embed)
+
+  [Embed HOW-TO (click)](https://gist.github.com/TwinDragon/9cf12da39f6b2888c8d71865eb7eb6a8)
+
+
+
+base.description: |-
+  Base commands like `help`, etc
+
+base.description.users_with_role: |-
+  Get users with given role
+
+base.description.changelog: |-
+  See a list of the bot's latest updates
+
+base.description.stats: |-
+  Naomi statistics. Check latest update, your settings (prefix, locale) and other
+
+base.description.emoji: |-
+  Get information about given emoji
+
+base.description.urban: |-
+  Urban dictionary. Uses https://urbandictionary.com API
+
+  **Examples:**
+  `{p}urban <word>`
+
+  **Note:**
+  *Since this command uses the urbandictionary.com API, we do not guarantee the stable functioning of the command.*
+
+base.description.avatar: |-
+  Get user's avatar. Or your, if no arguments
+
+  **Examples:**
+  `{p}avatar` - see your avatar;
+  `{p}avatar [mention/username/nickname/id]` - get avatar of given user;
+
+base.description.guild: |-
+  Get information about this server
+
+  **Note:**
+  *This commands only works on servers.*
+
+base.description.user: |-
+  Get information about another user or server member
+
+base.description.github: |-
+  Get information about GitHub repository
+
+  **Examples:**
+  `{p}github The-Naomi-Developers ChromeChain` - information about 'ChromeChain' repository from organization 'The-Naomi-Developers'
+
+  **Note:**
+  *Working only with GitHub. GitLab, BitBucket, etc. not supported yet.*
+
+base.description.i18n: |-
+  Localization test
+
+base.description.hi: |-
+  Say hi to Naomi
+
+base.description.help: |-
+  Command list, help on command or command category
+
+  **Examples:**
+  `{p}help` - see the command list;
+  `{p}help Base` - commands from category Base;
+  `{p}help github` - help for command '{p}github'
+
+base.description.hardware: |-
+  Get hardware info, allowed types: [video/cpu]
+
+  **Examples:**
+  `{p}hw video GeForce GTX 980 Ti` - view information about graphics card "NVIDIA GeForce GTX 980 T
+  `{p}hw cpu E1-6010` - view information about CPU "AMD E1-601
+
+  **Note:**
+  *Write model without manufacturer's name (like ATI, NVIDIA, Intel, etc.)*

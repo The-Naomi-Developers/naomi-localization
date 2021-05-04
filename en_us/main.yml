@@ -1,0 +1,81 @@
+name: en_us
+full_name: English (US)
+flag: "🇺🇸"
+
+base.no_reason: "no reason"
+base.answer.yes: "Yes"
+base.answer.no: "No"
+base.test: Naomi bot localization test.
+base.punishment.BAN: ban
+base.punishment.UNBAN: unban
+base.punishment.MUTE: mute
+base.punishment.UNMUTE: unmute
+base.punishment.KICK: kick
+base.punishment.WARN: warning
+base.punishment.BLOCK: access blocked
+base.punishment.UNBLOCK: access granted
+
+
+base.datetime_format_string: |-
+  {months} mon. {days} d. {hours} h. {minutes} m. {seconds} s.
+
+base.requested_by: |-
+  Requested by {ping}
+
+
+base.no_base_permissions: |-
+  :warning: ⟩ I'm sorry, but I can't allow commands to be executed without having basic permissions to interact.
+  Basic permissions in this case means access to `send messages', `add reactions' and `use external emoji'.
+
+base.errors.unable_to_send: |-
+  <:n4_no:701392095822479370> ⟩ The output of the executed command could not be sent.
+  It is possible that the result of the execution was too long.
+
+base.errors.author_is_user_not_member: |-
+  <:n4_no:701392095822479370> ⟩ Failed to execute a command from an edited message.
+  Try entering a command.
+
+base.when_pinged: |-
+  {mention}, hello!
+  **My prefix for you is `{prefix}`, so use it to access my commands.**
+
+  :information_source: ⟩ If you forget your command prefix, you can always mention me.
+  :warning: ⟩ If for some reasons you can't use my commands with the current prefix, please visit [**`https://naomi.life/profile`**](https://naomi.life/profile) and reset the prefix on the site.
+
+  I would be very happy if you would support me on the monitoring:
+  [**` Top.gg `**](https://top.gg/bot/601706228078346250)
+
+
+base.permission.CREATE_INSTANT_INVITE: Create instant invites
+base.permission.ADD_REACTIONS: Add reactions
+base.permission.READ_MESSAGES: Read messages
+base.permission.SEND_MESSAGES: Send messages
+base.permission.EMBED_LINKS: Embed links
+base.permission.ATTACH_FILES: Attach files
+base.permission.READ_MESSAGE_HISTORY: Read message history
+base.permission.EXTERNAL_EMOJIS: Use external emojis
+base.permission.VIEW_GUILD_INSIGHTS: View guild insights
+base.permission.CHANGE_NICKNAME: Change your nickname
+base.permission.KICK_MEMBERS: Kick members
+base.permission.BAN_MEMBERS: Ban members
+base.permission.ADMINISTRATOR: Administrator
+base.permission.MANAGE_CHANNELS: Manage channels
+base.permission.MANAGE_GUILD: Manage guild
+base.permission.VIEW_AUDIT_LOG: View audit logs
+base.permission.PRIORITY_SPEAKER: Priority speaker
+base.permission.STREAM: Stream
+base.permission.SEND_TTS_MESSAGES: Send Text-To-Speech messages
+base.permission.MANAGE_MESSAGES: Manage messages
+base.permission.MENTION_EVERYONE: Mention everyone
+base.permission.CONNECT: Connect to voice channels
+base.permission.SPEAK: Speak
+base.permission.MUTE_MEMBERS: Mute members
+base.permission.DEAFEN_MEMBERS: Deafen members
+base.permission.MOVE_MEMBERS: Move members
+base.permission.USE_VOICE_ACTIVATION: Use voice activation
+base.permission.MANAGE_NICKNAMES: Manage nicknames
+base.permission.MANAGE_ROLES: Manage roles
+base.permission.MANAGE_WEBHOOKS: Manage webhooks
+base.permission.MANAGE_EMOJIS: Manage emojis
+
+core.service_unavailable: "<:n4_no:701392095822479370> ⟩ Service is unavailable. Try again later. :sob:"
